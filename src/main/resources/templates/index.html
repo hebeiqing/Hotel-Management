@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="zxx" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="utf-8">
+	<meta name="description" content="Molini- Hotel And Resort Responsive HTML5 Template">
+	<meta name="keywords" content="agency, developer, directory, home, house, html5, listing, material design, modern, property, real estate, realtor, rental">
+	<meta name="author" content="shifttechplus">
+	<!-- Title -->
+	<title>知途酒店</title>
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+	<!-- Stylesheets Start -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}">
+	<link rel="stylesheet" href="css/flaticon.css" th:href="@{css/flaticon.css}">
+	<link rel="stylesheet" href="css/jquery-ui.css" th:href="@{css/jquery-ui.css}">
+	<link rel="stylesheet" href="css/font-awesome.min.css"th:href="@{css/font-awesome.min.css}">
+	<link rel="stylesheet" href="css/icofont.min.css" th:href="@{css/icofont.min.css}">
+	<link rel="stylesheet" href="css/magnific-popup.css" th:href="@{css/magnific-popup.css}">
+	<link rel="stylesheet" href="css/owl.carousel.min.css" th:href="@{css/owl.carousel.min.css}">
+	<link rel="stylesheet" href="css/animate.css" th:href="@{css/animate.css}">
+	<link rel="stylesheet" href="css/main.css" th:href="@{css/main.css}">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/meanmenu.min.css" th:href="@{css/meanmenu.min.css}">
+	<link rel="stylesheet" href="css/responsive.css" th:href="@{css/responsive.css}">
+	<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<link href= "/static/images" th:href="@{/static/images}">
+
+</head>
+<body>
+	<!-- Preloader Start -->
+	<div id="preloader">
+		<div id="preloader-status"></div>
+	</div>
+	<!-- Preloader End -->
+	<!-- Header Start -->
+	<header>
+		<!-- Main Bar Start -->
+		<div class="hd-sec">
+			<div class="container">
+				<div class="row">
+					<div id="head"></div>  <!--引入菜单-->
+			</div>
+		</div>
+		</div>
+	</header>
+
+ <!-- 轮播图-->
+
+	<div class="slider">
+		<div class="all-slide owl-item" >
+			<!-- Slider Single Item Start -->
+			<div class="single-slide" th:each="img : ${type}"   style="background-image:url(img/slider-1.jpg) ; " th:value="${img.r_img}"  th:style="'background:url(images/'+${img.r_img} + ');'" >
+				;
+				<div class="slider-wrapper"  >
+					<div class="slider-text">
+						<div class="slider-caption">
+							<h1>Welcome to <span>Hotel Moley</span></h1> <!--th:text="${img.roomType}"-->
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+							<ul>
+								<li><a href="#"  th:href="@{search(roomtype='总统套间')}">了解更多</a></li>
+							</ul>							
+						</div>	
+					</div>
+				</div>				
+			</div>
+			<!-- Slider Single Item End
+			 Slider Single Item Start-->
+			<!--<div class="single-slide" style="background-image:url(img/slider-2.jpg);">
+				<div class="slider-wrapper">
+					<div class="slider-text">
+						<div class="slider-caption">
+							<h1>Make Your Vacation Wonderful</h1>	
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+							<ul>
+								<li><a href="#">我是轮播图</a></li>
+							</ul>							
+						</div>		
+					</div>
+				</div>				
+			</div>-->
+			 <!--Slider Single Item End
+			 Slider Single Item Start-->
+			<!--<div class="single-slide" style="background-image:url(img/slider-3.jpg);">
+				<div class="slider-wrapper">
+					<div class="slider-text">
+						<div class="slider-caption">
+							<h1>Make Your Vacation Wonderful</h1>	
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+							<ul>
+								<li><a href="#">我是轮播图</a></li>
+							</ul>							
+						</div>		
+					</div>
+				</div>				
+			</div>-->
+			<!-- Slider Single Item End-->
+		</div>
+	</div>
+
+	<!-- About Section Start -->
+	<div class="about-sec pt-100 pb-70" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-desc-img">
+						<img src="img/about.jpg" alt=""/>
+					</div>
+				</div>			
+				<div class="col-md-6 col-sm-6">
+					<div class="about-desc">
+						<!--<span>关于</span>-->
+						<h1>关于</h1>
+						<h1><span class="border_left"></span>知途酒店</h1>
+						<p>酒店毗邻上海展览中心，距离闻名遐迩的静安寺、购物天堂南京路以及毛主席故居仅举步之遥。酒店不仅提供幽静的水疗中心和设施完善的健身中心等设施，还供应各种风格各异的东西方风味佳肴，例如夏宫中餐厅、1515牛排馆、地中海餐厅以及鹤日本料理等，随时随地诱惑您的味蕾。</p>
+						<a href="#" class="simple-btn" >了解更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About Section End -->				
+	<!-- Room List Section Start -->
+	<div class="room-list-sec pt-100 pb-70 bg-gray">
+		<div class="container">
+			<!-- Section Title Start -->	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="sec-title">
+						<h1><span class="title_border"></span>客房与套房</h1>
+						<p>入住 / 退房, <br>
+							希望您入住愉快<br>
+							请留意入住/退房时间:<br>
+							入住：下午 2 点<br>
+							退房：中午 12 点</p>
+					</div>
+				</div>
+			</div>
+			<!-- Section Title End -->	
+			<div class="row">
+				<!-- Single Room Start -->	
+				<div class="col-md-4 col-sm-6">
+					<div class="room-list-inner">						
+						<div class="room-list-img">
+							<img src="img/room-1.jpg" alt=""/>
+							<!--<div class="room-list-img-overlay">
+								 <a href="#">$ 250起</a>
+							</div>-->
+						</div>
+						<div class="room-list-text">
+							<h2>
+								<a href="#">三人间-家庭套间</a>
+								<span class="room-rating">
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+								<!--	<i class="icofont-ui-rate-blank"></i> 空星
+									<i class="icofont-ui-rate-blank"></i>-->
+								</span>
+							</h2>
+							<p>客房位于酒店6至24层，宽敞通透的格局洋溢着时尚优雅的气息。 放眼望去，世纪公园或繁华的都市风光一览无遗。</p>
+							<a href="#" class="booking-btn" th:href="@{search(roomtype='三人房-家庭套间')}">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Room End -->				
+				<!-- Single Room Start -->	
+				<div class="col-md-4 col-sm-6">
+					<div class="room-list-inner">						
+						<div class="room-list-img">
+							<img src="img/room-2.jpg" alt=""/>
+							<!--<div class="room-list-img-overlay">
+								 <a href="#">$ 180起</a>
+							</div>	-->
+						</div>
+						<div class="room-list-text">
+							<h2>
+								<a href="#">双人间-标准间</a>
+								<span class="room-rating">
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<!--<i class="icofont-ui-rate-blank"></i>
+									<i class="icofont-ui-rate-blank"></i>-->
+								</span>
+							</h2>
+							<p>双人间-标准间客房，提供宽敞舒适的非套房休憩空间，并赋予宾客嘉里阁贵宾廊的专享礼遇。</p>
+							<a href="#" class="booking-btn" th:href="@{search(roomtype='双人间-标准间')}">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Room End -->		
+				<!-- Single Room Start -->	
+				<div class="col-md-4 col-sm-6">
+					<div class="room-list-inner">						
+						<div class="room-list-img">
+							<img src="img/room-3.jpg" alt=""/>
+							<!--<div class="room-list-img-overlay">
+								 <a href="#">$ 180起</a>
+							</div>	-->
+						</div>
+						<div class="room-list-text">
+							<h2>
+								<a href="#">行政客房</a>
+								<span class="room-rating">
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<i class="icofont-ui-rating"></i>
+									<!--<i class="icofont-ui-rate-blank"></i>
+									<i class="icofont-ui-rate-blank"></i>-->
+								</span>
+							</h2>
+							<p>行政客房装饰雍容典雅，舒适宽敞。宾客更可尊享豪华阁专属礼遇，是追求非凡个性化服务与设施的宾客之选择</p>
+							<a href="#" class="booking-btn" th:href="@{search(roomtype='商务房-行政间')}">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Room End -->	
+			</div>
+		</div>
+	</div>
+	<!-- Room List Section End -->
+	<!-- Service Section Start -->
+	<div class="service-sec pt-100 pb-70">
+		<div class="container">
+			<!-- Section Title Start -->	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="sec-title">
+						<h1><span class="title_border"></span>入住即可享受</h1>
+
+					</div>
+				</div>
+			</div>
+			<!-- Section Title End -->			
+			<div class="row">		
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">footer
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-wifi-connection-signal-symbol"></i></span> <span class="service_border"></span>免费 Wifi</a></h3>
+						<p>无线互联网 </p>
+					</div>
+				</div>	
+				<!-- Single Service End -->					
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-fruit"></i></span> <span class="service_border"></span>免费早餐</a></h3>
+						<p>入住期间可享用次日自助早餐 (至多两人)  </p>
+					</div>
+				</div>	
+				<!-- Single Service End -->				
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-sea-waves"></i></span> <span class="service_border"></span>私人游泳池</a></h3>
+						<p>使用健身中心及游泳池</p>
+					</div>
+				</div>	
+				<!-- Single Service End -->				
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-sun-bath-2"></i></span> <span class="service_border"></span>儿童游乐场</a></h3>
+						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit am</p>
+					</div></div>
+
+				<!-- Single Service End -->						
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-taxi"></i></span> <span class="service_border"></span>机场的出租车</a></h3>
+						<p>Neque porrouam eius modi tempora incidunt ut labore et dolore magnam  </p>
+					</div>
+				</div>	
+				<!-- Single Service End -->				
+				<!-- Single Service Start -->			
+				<div class="col-md-4 col-sm-6">
+					<div class="service-inner">
+						<h3><a href="#"><span class="service-icon"><i class="flaticon-breakfast"></i></span> <span class="service_border"></span>24/7的管家服务</a></h3>
+						<p>Neque porro quisqt, sed qdunt ut labore et dolore magnam  </p>
+					</div>
+				</div>
+				<!-- Single Service End -->					
+			</div>
+		</div>
+	</div>
+	<div id="foot"></div>
+	<!--&lt;!&ndash; Blog Section End &ndash;&gt;
+	&lt;!&ndash; Footer Section Start &ndash;&gt;
+	<footer class="footer">	
+		&lt;!&ndash; Footer Top Start &ndash;&gt;
+		<div class="footer-sec">	
+			<div class="container">
+				<div class="row">
+					&lt;!&ndash; Single Footer Widget Start &ndash;&gt;
+					<div class="col-md-3 col-sm-6 footer-widget">
+						<div class="footer-wedget-one">
+							<img class="footer-logo" src="img/footer-logo.png" alt=""/>
+							<p>Omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae</p>		
+							<div class="footer-wedget-contact">
+								<div class="footer-social-profile">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-google"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+									</ul>							
+								</div>												
+							</div>								
+						</div>					
+					</div>	
+					&lt;!&ndash; Single Footer Widget End &ndash;&gt;
+					&lt;!&ndash; Single Footer Widget Start &ndash;&gt;
+					<div class="col-md-3 col-sm-6 footer-widget">
+						<div class="footer-widget-menu">
+							<h2 class="footer-widget-title">Booking</h2>
+							<ul>
+								<li><a href="#">Rooms & Suites</a></li>
+								<li><a href="#">Restaurant</a></li>
+								<li><a href="#">Flights</a></li>
+								<li><a href="#">Bar Club</a></li>
+								<li><a href="#">Penthouse</a></li>
+								<li><a href="#">Swimming Pool</a></li>
+							</ul>
+						</div>
+					</div>	
+					&lt;!&ndash; Single Footer Widget End &ndash;&gt;
+					&lt;!&ndash; Single Footer Widget Start &ndash;&gt;
+					<div class="col-md-3 col-sm-6 footer-widget">
+						<div class="footer-widget-recent-news">
+							<h2 class="footer-widget-title">Recent post</h2>
+							<ul>
+								<li>
+									<a href="#">
+										<span class="recent-news-border"></span>
+										<span class="recent-news-title">Travel gift ideas for every type of traveler</span>
+									</a>
+								</li>								
+								<li>
+									<a href="#">
+										<span class="recent-news-border"></span>
+										<span class="recent-news-title">Travel gift ideas for every type of traveler</span>
+									</a>
+								</li>					
+								<li>
+									<a href="#">
+										<span class="recent-news-border"></span>
+										<span class="recent-news-title">Travel gift ideas for every type of traveler</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					&lt;!&ndash; Single Footer Widget End &ndash;&gt;
+					&lt;!&ndash; Single Footer Widget Start &ndash;&gt;
+					<div class="col-md-3 col-sm-6 footer-widget">
+						<div class="footer-newsletter-form">
+							<h2 class="footer-widget-title">Subscibe</h2>
+							<form method="post" action="#">
+								<input type="text" placeholder="Name">
+								<input type="email" placeholder="Email">
+								<input type="submit" value="Subscibe now">
+							</form>				
+						</div>
+					</div>	
+					&lt;!&ndash; Single Footer Widget End &ndash;&gt;
+				</div>
+			</div>
+		</div>
+		&lt;!&ndash; Footer Top End &ndash;&gt;
+		&lt;!&ndash; Footer Bottom Start &ndash;&gt;
+		<div class="footer-bottom-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="copy-right">
+							<p>&copy; 2019  何北清版权仅有 <a href="https://www.baidu.com/" >归零</a>.</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		&lt;!&ndash; Footer Bottom End &ndash;&gt;
+	</footer>-->
+	<!-- Footer Section End -->
+	<!--<script src="js/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl.animate.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/modernizr.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.meanmenu.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyAJdanixi2Nzt7V-XXzo22neY4Eso8DXCQ"></script>
+-->
+
+	<script src="/static/js/jquery-latest.min.js" th:src="@{js/jquery-latest.min.js}"></script>
+	<script src="/static/js/bootstrap.min.js" th:src="@{js/bootstrap.min.js}"></script>
+	<script src="/static/js/jquery-ui.js" th:src="@{js/jquery-ui.js}"></script>
+	<script src="/static/js/isotope.pkgd.min.js" th:src="@{js/isotope.pkgd.min.js}"></script>
+	<script src="/static/js/jquery.magnific-popup.min.js" th:src="@{js/jquery.magnific-popup.min.js}"></script>
+	<script src="/static/js/owl.carousel.min.js" th:src="@{js/owl.carousel.min.js}"></script>
+	<script src="/static/js/owl.animate.js" th:src="@{js/owl.animate.js}"></script>
+	<script src="/static/js/jquery.scrollUp.min.js" th:src="@{js/jquery.scrollUp.min.js}"></script>
+	<script src="/static/js/jquery.counterup.min.js" th:src="@{js/jquery.counterup.min.js}"></script>
+	<script src="/static/js/modernizr.min.js" th:src="@{js/modernizr.min.js}"></script>
+	<script src="/static/js/waypoints.min.js" th:src="@{js/waypoints.min.js}"></script>
+	<script src="/static/js/jquery.meanmenu.min.js" th:src="@{js/jquery.meanmenu.min.js}"></script>
+	<script src="/static/js/jquery.countdown.js" th:src="@{js/jquery.countdown.js}"></script>
+	<script src="/static/js/imagesloaded.pkgd.min.js" th:src="@{js/imagesloaded.pkgd.min.js}"></script>
+	<script src="/static/http://ditu.google.cn/maps/api/js?key=AIzaSyAJdanixi2Nzt7V-XXzo22neY4Eso8DXCQ"></script>
+	<script src="/static/js/custom.js" th:src="@{js/custom.js}"></script>
+	<!-- Scripts Js End -->
+	<script>
+        $("#head").load("head.html");
+        $("#foot").load("foot.html");
+	</script>
+	<!--thymeladf-->
+	<script>
+        $("#head").load("/indextop");
+        $("#foot").load("/foot");
+	</script>
+</body>
+</html>

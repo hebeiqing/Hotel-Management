@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js h-100" lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:td="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link th:href="@{/styles/shards-dashboards.1.1.0.min.css}">
+    <link th:href="@{/styles/extras.1.1.0.min.css}">
+  </head>
+  <body class="h-100">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="page1"></div>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div id="top1"></div>
+          <!-- / .main-navbar -->
+          <div class="alert alert-accent alert-dismissible fade show mb-0" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <i class="fa fa-info mx-2"></i>
+            <strong>不用钱酒店</strong>   生命中最伟大的光辉不在于永不坠落 而是坠落后总能再度升起   </div>
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4 mb-3 border-bottom">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">不用钱酒店</span>
+                <h3 class="page-title">所有房间类型</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">房间类型</h6>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0 ">
+                      <thead class="bg-light">
+                      <tr>
+                        <th scope="col" class="border-0">#</th>
+                        <th scope="col" class="border-0">房间类型</th>
+                        <th scope="col" class="border-0">床位数</th>
+                        <th scope="col" class="border-0">单价</th>
+                        <th scope="col" class="border-0">押金</th>
+                        <th scope="col" class="border-0">是否钟点房</th>
+                        <th scope="col" class="border-0">钟点房价</th>
+                        <th scope="col" class="border-0">房间数量</th>
+                        <th scope="col" class="border-0">备注</th>
+                        <th scope="col" class="border-0">操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr th:each="type : ${roomtype}">
+                        <td th:text="${type.id}">1</td>
+                        <td th:text="${type.RType}">单人房</td>
+                        <td th:text="${type.bed}">10</td>
+                        <td th:text="${type.price}">158</td>
+                        <td th:text="${type.foregift}">200</td>
+                        <td th:text="${type.cl_room}">否</td>
+                        <td th:text="${type.cl_price}">0.00</td>
+                        <td th:text="${type.delmark}">0.00</td>
+                        <td th:text="${type.remark}">已上架</td>
+                        <td>
+                          <a href="/editroomtype" th:href="@{editroomtype(id=${type.id})}"  class="mb-2 btn btn-sm btn-info mr-1">修改</a>
+                          <a href="/deleteroomtype"  th:href="@{deleteroomtype(id=${type.id})}" class="mb-2 btn btn-sm btn-danger mr-1" >删除</a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/editroomtype"  class="mb-2 btn btn-sm btn-success mr-3 dropdown-toggle" >添加</a>
+          </div>
+        </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+  <script src="scripts/extras.1.1.0.min.js"></script>
+  <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+  <script src="scripts/app/app-components-overview.1.1.0.js"></script>
+  <!--thymeladf-->
+  <script th:src="@{/scripts/extras.1.1.0.min.js}"></script>
+  <script th:src="@{/scripts/shards-dashboards.1.1.0.min.js}"></script>
+  <script th:src="@{/scripts/app/app-components-overview.1.1.0.js}"></script>
+  <link th:href="@{/footer.html}">
+  <link th:href="@{/head.html}">
+      <script>
+          $("#page1").load("footer.html");
+          $("#top1").load("head.html");
+      </script>
+  <!--thymeladf-->
+  <script>
+      $("#page1").load("/footer");
+      $("#top1").load("/head");
+  </script>
+  </body>
+</html>

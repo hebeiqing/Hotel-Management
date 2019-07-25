@@ -1,0 +1,348 @@
+@media only screen and (min-width: 992px) and (max-width: 5000px) {
+
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.slider-wrapper {
+	width: 100%;
+}
+.main-menu ul li a {
+padding: 32px 8px;
+}
+.contact-social-profile {
+	padding: 95px 0;
+}
+.applay-button a {
+	padding: 14px 20px;
+}
+.room-rating {
+	float: inherit;
+	display: inline-block;
+	width: 100%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+ line-height: 1.4;
+}
+p {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    padding: 0;
+	line-height: 1.5;
+}
+.pt-130{padding-top:100px}
+.pt-100{padding-top:70px}
+.pb-100{padding-bottom:70px}
+.pb-70{padding-bottom:50px}
+.pt-80{padding-top:60px}
+.pb-80{padding-bottom:60px}
+.pt-50{padding-top: 40px;}
+.pb-50{padding-bottom: 40px;}
+h1{
+	font-size: 28px;
+}
+h2 {
+font-size: 24px;
+}
+h3 {
+font-size: 22px;
+}
+h4 {
+font-size: 16px;
+}
+.pt-100{padding-top:80px}
+.pb-100{padding-bottom:80px}
+.pb-80{padding-bottom:50px}
+.pb-70{padding-bottom:40px}
+
+.main-menu ul li a {
+	padding: 40px 5px;
+	font-size: 14px;
+}
+.main-menu ul li:hover ul {	
+top:100px; 
+}
+.slider-text h1 {
+font-size: 30px;
+}
+.slider-text li a {
+padding: 12px 22px;
+}
+.slider-wrapper {
+	width: 100%;
+}
+.about-desc h1 {
+	font-size: 22px;
+}
+.about-desc {
+	margin-top: 0;
+}
+.sec-title h1 {
+	font-size: 26px;
+}
+.event-img img {
+	width: 100%;
+}
+.about-v2-desc h1 {
+	font-size: 26px;
+}
+.single-field {
+	position: relative;
+	margin-bottom: 10px;
+}
+.room-gallary-img > img {
+	width: 100%;
+}
+.room-gallary-caption {
+	border: 8px solid rgba(221, 221, 221, 0.0);
+}
+.room-gallary-caption::after {
+	top: -4px;
+}
+.home-v2 .slider-text::before {
+	display: none;
+}
+.home-v2 .slider-text {
+	top: 60%;
+	border: indianred;
+	padding: 0px 70px;
+}
+.applay-button {
+	padding: 21px 0px;
+}
+.room-gallary-v2-sec .room-gallary-inner {
+	margin-bottom: 30px;
+}
+.home-v3 .slider-text {
+	width: 600px;
+}
+.room-call-desc h1 {
+	font-size: 26px;
+}
+.room-discount h1 {
+	font-size: 42px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+.main-menu ul li a {
+	padding: 40px 5px;
+	font-size: 14px;
+}
+.main-menu ul li:hover ul {	
+top:100px; 
+}
+body {
+ line-height: 1.4;
+}
+p {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 20px;
+    padding: 0;
+	line-height: 1.5;
+	font-size: 20px
+}
+.pt-130{padding-top:70px}
+.pb-100{padding-bottom:70px}
+.pb-70{padding-bottom:50px}
+.pt-80{padding-top:60px}
+.pb-80{padding-bottom:60px}
+.pt-50{padding-top: 40px;}
+.pb-50{padding-bottom: 40px;}
+
+.slider-wrapper {
+	width: 100%;
+	padding: 0px 60px;
+}
+.slider-text {
+	width: 100%;
+}
+.promo-inner{margin-bottom:30px;}
+.all-course.owl-carousel.owl-theme .owl-dots {
+    padding-bottom: 0px;
+	}
+.slider-text h1 {
+font-size: 30px;
+}
+.slider-text li a {
+padding: 12px 22px;
+}
+.applay-button-area {
+	display: none;
+}
+.slider-wrapper {
+	width: 100%;
+}
+.about-desc h1 {
+	font-size: 22px;
+}
+.about-desc {
+	margin-top: 0;
+}
+.sec-title h1 {
+	font-size: 26px;
+}
+.event-img img {
+	width: 100%;
+}
+.logo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.about-desc-img {
+	margin-bottom: 30px;
+}
+.room-list-img img {
+	width: 100%;
+}
+.slider-text {
+	padding: 30px 10px;
+	top: 50%;
+}
+.slider-text::before {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+.hd-sec {
+	top: 0;
+}
+.single-field {
+	position: relative;
+	margin-bottom: 10px;
+}
+.room-gallary-img > img {
+	width: 100%;
+}
+.room-gallary-caption {
+	border: 8px solid rgba(221, 221, 221, 0.0);
+}
+.room-gallary-caption::after {
+	top: -4px;
+}
+.home-v2 .slider-text::before {
+	display: none;
+}
+.home-v2 .slider-text {
+	top: 60%;
+	border: indianred;
+	padding: 0px 0px;
+}
+.applay-button {
+	padding: 21px 0px;
+}
+.room-gallary-v2-sec .room-gallary-inner {
+	margin-bottom: 30px;
+}
+.room-call-desc h1,
+.about-v2-desc h1 {
+	font-size: 26px;
+}
+.recent-news-border {
+	top: 10px;
+}
+.pagehding-sec {
+	padding-bottom: 90px;
+	padding-top: 150px;
+}
+.about-desc-img img {
+	width: 100%;
+}
+.room-discount {
+	text-align: left;
+}
+.room-discount h1 {
+	font-size: 34px;
+}
+.room-details-img img {
+	width: 100%;
+}
+.room-feature li {
+width: 50%;
+}
+
+}
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 492px) {
+.slider-text h1 {
+	font-size: 24px;
+	line-height: 40px;
+}
+.slider-text ul{margin-top:40px;}
+.commentar-sec img {
+	float: inherit;
+	margin-bottom: 20px;
+}
+.post-commenter-author .media-left {
+	display: inherit;
+	width: 100%;
+	float: inherit;
+}
+.event-item {
+	background:inherit;
+	display: inline-block;
+	width:inherit;
+	height: inherit;
+	margin: 5px;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+.single-commenter .media-left {
+	display: inherit;
+	margin-bottom: 30px;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 390px) {
+.sec-title h1 {
+  font-size:28px;
+}
+
+
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+
+
+}
